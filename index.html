@@ -23,75 +23,60 @@
       rel="stylesheet"
     />
 
-    <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
+    <title>Interior Consultant | Devchallenges</title>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
+    <header>
+      <button class="header-button">This Interior</button>
+      <nav class="navigation">
+        <ul class="navigation__links">
+          <li>
+            <a class="navigation__link"> Home </a>
+          </li>
+          <li>
+            <a class="navigation__link"> Collection </a>
+          </li>
+          <li>
+            <a class="navigation__link"> About </a>
+          </li>
+          <li>
+            <a class="navigation__link"> Contact </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <header class="main__header">
+        <h1 class="main__heading">Modern interior</h1>
 
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
+        <p class="main__paragraph">
+          A full-Service residential & commercial interior design and staging
+          company offering professional organizing & eco-services.
         </p>
-      </div>
 
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
-    </div>
+        <button class="main__button">Read more</button>
+      </header>
+      <div class="main__content-container">
+        <img src="./photo1.png" alt="room" class="main__image" />
+        <div class="card">
+          <div class="card__user-info">
+            <img
+              src="photo2.png"
+              class="card__user-picture"
+              alt="profile-picture"
+            />
+            <p class="card__user-name">Aliza Webber</p>
+            <p class="card__user-title">Interior designer</p>
+          </div>
+          <h4 class="card__heading">Designed in 2020 by Aliza Webber</h4>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p class="footer__text">
+        created by <span class="footer__bold-text">username</span> -
+        devChallenges.io
+      </p>
+    </footer>
   </body>
 </html>

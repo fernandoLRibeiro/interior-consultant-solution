@@ -1,0 +1,25 @@
+:root {
+  --crimson-pro-font: "Crimson Pro", serif;
+  --montserrat-font: "Montserrat", sans-serif;
+  --lora-font: "Lora", serif;
+  --dark-grey: #181719;
+  --medium-grey: #828282;
+  --light-grey: #f2f2f2;
+  --white: #ffffff;
+  --font-size-largest: 3rem;
+  --font-size-large: 1.5rem;
+  --font-size-medium: 1.125rem;
+  --font-size-small: 0.875rem;
+  --font-size-smaller: 0.75rem;
+  --font-size-smallest: 0.625;
+  --font-weight-extra-light: 200;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}

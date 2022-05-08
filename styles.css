@@ -8,6 +8,7 @@
   --light-grey: #f2f2f2;
   --white: #ffffff;
   --font-size-largest: 3rem;
+  --font-size-larger: 2.25rem;
   --font-size-large: 1.5rem;
   --font-size-medium: 1.125rem;
   --font-size-small: 0.875rem;
@@ -47,7 +48,7 @@ body {
   justify-content: space-between;
   position: sticky;
   top: 0;
-  background-color: var(--dark-grey);
+  background-color: hsl(270, 4%, 9%, 0.8);
 }
 
 .header-button {
@@ -74,10 +75,6 @@ body {
   font-weight: var(--font-weight-medium);
   text-decoration: none;
   color: var(--white);
-}
-
-.navigation__link:target {
-  background-color: red;
 }
 
 .home {
@@ -134,10 +131,10 @@ body {
   display: flex;
   flex-direction: column;
   background-color: var(--dark-grey);
-  width: 410px;
+  width: 55%;
   padding: 1.5rem;
-  margin-top: -5em;
-  margin-right: 2em;
+  margin-top: -15%;
+  margin-right: 5%;
   box-shadow: 0px 4px 4px 0px #00000040;
 }
 
@@ -149,7 +146,7 @@ body {
 
 .card__user-picture {
   width: 3em;
-  height: 3em;
+  aspect-ratio: 1;
   border-radius: 50%;
 }
 
@@ -187,4 +184,67 @@ body {
 
 .footer__bold-text {
   font-weight: var(--font-weight-bold);
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 1.75rem 0 0 1.25rem;
+  }
+
+  .navigation__links {
+    display: none;
+  }
+
+  .home {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .home__header {
+    width: 100%;
+    gap: 1.5rem;
+  }
+
+  .home__heading {
+    font-size: var(--font-size-larger);
+  }
+
+  .home__paragraph {
+    font-size: var(--font-size-small);
+    width: 70%;
+  }
+
+  .home__button {
+    font-size: var(--font-size-small);
+  }
+
+  .home__content-container {
+    width: 100%;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .card__user-info {
+    gap: 0.3rem;
+  }
+
+  .card__user-picture {
+    width: 2.5rem;
+  }
+
+  .card__heading {
+    font-size: var(--font-size-medium);
+    width: 80%;
+  }
+
+  .card__user-name {
+    font-size: var(--font-size-smaller);
+  }
+
+  .card__user-title {
+    font-size: var(--font-size-smallest);
+  }
 }

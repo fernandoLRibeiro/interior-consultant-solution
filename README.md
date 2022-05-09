@@ -41,7 +41,7 @@
 
 #### Desktop
 
-![desktop](./screenshots/desktop.png))
+![desktop](./screenshots/desktop.png)
 
 #### Mobile
 

@@ -51,8 +51,7 @@ body {
   background-color: var(--dark-grey);
 }
 
-.header-button {
-  outline: none;
+.header__logo {
   border: 1px solid white;
   text-transform: uppercase;
   font-family: var(--crimson-pro-font);
@@ -75,10 +74,24 @@ body {
   font-weight: var(--font-weight-medium);
   text-decoration: none;
   color: var(--white);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-.navigation__link.active {
-  text-decoration: underline;
+.navigation__link--active,
+.navigation__link:hover {
+  font-weight: var(--font-weight-bold);
+}
+
+.navigation__link--active::after,
+.navigation__link:hover::after {
+  content: "";
+  position: relative;
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--white);
 }
 
 .navigation__burger-menu {
@@ -191,9 +204,10 @@ body {
   font-weight: var(--font-weight-medium);
 }
 
-.footer__bold-text {
+.footer__link {
   font-weight: var(--font-weight-bold);
   text-decoration: underline;
+  color: var(--medium-grey);
 }
 
 @media screen and (max-width: 768px) {

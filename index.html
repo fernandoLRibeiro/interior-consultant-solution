@@ -23,10 +23,12 @@
       href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/16fc69a1ad.js"
-      crossorigin="anonymous"
-    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <script src="./scripts/index.js" defer></script>
 
     <title>Interior Consultant | Devchallenges</title>
   </head>
@@ -34,7 +36,7 @@
     <header class="header">
       <button class="header-button">This Interior</button>
       <nav class="navigation">
-        <ul class="navigation__links">
+        <ul class="navigation__links" id="navigation-links">
           <li>
             <a class="navigation__link" href="#home"> Home </a>
           </li>
@@ -48,6 +50,9 @@
             <a class="navigation__link" href="#contact"> Contact </a>
           </li>
         </ul>
+        <button class="navigation__burger-menu" id="burger-menu-button">
+          <span class="material-symbols-outlined" id="icon">menu </span>
+        </button>
       </nav>
     </header>
     <main class="home" id="home">
@@ -61,7 +66,7 @@
 
         <button class="home__button">
           Read more
-          <i class="fa-solid fa-arrow-right-long"></i>
+          <span class="material-symbols-outlined"> arrow_right_alt </span>
         </button>
       </header>
       <div class="home__content-container">
